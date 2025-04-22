@@ -1,0 +1,6 @@
+Nodemon es una biblioteca de nodejs que permite mantener la ejecucion del servidor constantemente, eso permite a los desarrolladores, optimizar desarrollo, ya que en lugar de ejecutar el servidor cada vez que se realiza un cambio, solo se ejecuta una vez para iniciar el servidor, y esta biblioteca reiniciara la aplicacion cada vez que se realice un cambio.
+
+Como instalar nodemon:
+    1. Lo primero es abrir la terminal en la raiz del proyecto y escribir "npm install nodemon -D" (-D se usa para instalar un paquete como dependencia de desarrollo, ya que esta no se subira a produccion).
+    2. Lo siguiente es entrar a package.json y en la parte de scripts, agregar uno nuevo (start o dev), en el valor se escribira "nodemon nombre del archivo"
+    3. Para ejecutar, se escribe en la terminal npm start (o run dev), y listo, el servidor esta corriendo.
