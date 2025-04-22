@@ -1,15 +1,11 @@
 import express from 'express';
-import rutasLibros from './routes/libros.route.js';
-
-const PORT = process.env.PORT ?? 3000;
+import rutasLibros from './routes/libros.route.js';  // Asegúrate de que esta ruta esté bien configurada
 
 const app = express();
+const PORT = process.env.PORT || 3000;
 
-// Middleware para manejar JSON (solo una vez es necesario)
 app.use(express.json());
-
-// Ruta para los libros
-app.use('/api/libros', rutasLibros);
+app.use('/api/libros', rutasLibros);  // Esta es la ruta base para libros
 
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
